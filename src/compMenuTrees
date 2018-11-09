@@ -1,0 +1,4 @@
+gcc -c -ansi menuTrees.c -I. -Ilib/ -o menuTrees.o
+gcc -c -ansi genericFunctions.c -I. -Ilib/ -o genericFunctions.o
+gcc -c -ansi menuTreesMain.c -I. -Ilib/ -o menuTreesMain.o
+gcc menuTrees.o menuTreesMain.o genericFunctions.o -Llib/ -lm -o menuTrees
